@@ -1,0 +1,35 @@
+---
+name: HTML-Encapsulate
+version: v0.1
+author:
+  - 'Nick Woolley <npw@cpan.org>'
+abstract: rewrites an HTML page as a self-contained set of files
+license: artistic
+resources:
+  license: http://opensource.org/licenses/artistic-license.php
+requires:
+  HTML::Entities: 0
+  HTML::HeadParser: 0
+  HTML::Tidy: 0
+  HTML::TreeBuilder::XPath: 0
+  HTTP::Response::Encoding: 0
+  LWP: 0
+  Test::More: 0
+  URI: 0
+  perl: 5.6.1
+  version: 0
+build_requires:
+  LWP::UserAgent::Snapshot: 0
+  Module::Build: 0.28
+recommends:
+  Encode::Detect: 0
+  Encode::Detect::Detector: 0
+  Test::Files: 0.14
+provides:
+  HTML::Encapsulate:
+    file: lib/HTML/Encapsulate.pm
+    version: v0.1
+generated_by: Module::Build version 0.3
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
